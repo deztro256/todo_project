@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/fae280eed5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="min-w-[400px] min-h-screen bg-white justify-center text-center flex px-4 py-10 "
+  >
+    <div class="justify-center text-center">
+      <div class="relative mb-2 text-center justify-center text-center">
+        <h1 class=" text-8xl text-neutral-200">list</h1>
+        <h2 class="text-center">Enter list items here</h2>
+        <div class="border-none rounded-full shadow-sm text-center w-75">
+          <form action="" id="todo-form">
+            <input
+              id="listitem"
+              type="text"
+              placeholder="add new item"
+              class="rounded-full border-none py-4 pl-5 pr-14 text-center outline-none"
+            />
+            <button
+              id="addbtn"
+              type="submit"
+              class="w-8 h-8 rounded-full border-none bg-teal-600 text-white text-bold hover:bg-teal-600 hover:text-white align-center justify-center"
+            ><i class="fa-solid fa-plus"></i></button>
+          </form>
+        </div>
+        <ul id="todolist" class="mt-[50px] justify-center">
+        </ul>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
